@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="cdrmanager" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/cdrmanager" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/cdrmanager" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../../inc/cdrMessager.h" />
+		<Unit filename="../../inc/cdrParser.h" />
+		<Unit filename="../../inc/cdrParserManager.h" />
+		<Unit filename="../../inc/discoverer.h" />
+		<Unit filename="../../inc/fileHandler.h" />
+		<Unit filename="../../inc/safeThreadQueue.h" />
+		<Unit filename="../fileHandler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cdrMessager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cdrParser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cdrParserManager-test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cdrParserManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="discoverer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

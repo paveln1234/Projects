@@ -1,0 +1,111 @@
+# depslib dependency file v1.0
+1495042479 source:/home/pavel/src/ipc/ipcProject/src/cdrtohashtest/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<pthread.h>
+	"mu_test.h"
+	"cdrMessager.h"
+	"cdrParserManager.h"
+	"safeThreadQueue.h"
+	"datamanager.h"
+
+1495018255 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/cdrMessager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cdrMessager.h"
+
+1495094918 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/cdrParserManager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"safeThreadQueue.h"
+	"discoverer.h"
+
+1495052363 source:/home/pavel/src/ipc/ipcProject/src/datamanager/datamanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"cdrMessager.h"
+	"subscribeDs.h"
+	"oparetorDs.h"
+	"safeThreadQueue.h"
+	"datamanager.h"
+
+1495056964 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/cdrParser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"fileHandler.h"
+
+1495053631 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/discoverer.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	<pthread.h>
+	<unistd.h>
+	"cdrParserManager.h"
+	"discoverer.h"
+	"fileHandler.h"
+
+1495086556 source:/home/pavel/src/ipc/ipcProject/src/datamanager/oparetorDs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"safeThreadHashMap.h"
+	"oparetorDs.h"
+	"operator.h"
+
+1494915788 source:/home/pavel/src/ipc/ipcProject/src/datamanager/operator.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"operator.h"
+
+1494916277 source:/home/pavel/src/ipc/ipcProject/src/datamanager/subsriber.c
+	<stdio.h>
+	<stdlib.h>
+	"subscriber.h"
+
+1495057216 source:/home/pavel/src/ipc/ipcProject/src/fileHandler.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fileHandler.h"
+
+1495022394 source:/home/pavel/src/ipc/ipcProject/src/datamanager/subscribeDs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"safeThreadHashMap.h"
+	"subscribeDs.h"
+	"subscriber.h"
+
+1495097411 source:/home/pavel/src/ipc/ipcProject/src/cdrtohashtest/cdtToDatamanger-test.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<pthread.h>
+	"mu_test.h"
+	"cdrMessager.h"
+	"cdrParserManager.h"
+	"safeThreadQueue.h"
+	"datamanager.h"
+	"fileHandler.h"
+	"zlogManager.h"
+

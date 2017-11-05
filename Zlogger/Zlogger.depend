@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1509878538 source:/home/pavel/src/git/Zlogger/main.c
+	<stdio.h>
+	<stdlib.h>
+	"zlogManager.h"
+	"mu_test.h"
+
+1491713811 source:/home/pavel/src/git/Zlogger/src/config.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"config.h"
+	"queue.h"
+	"zlogManager.h"
+	"macros.h"
+
+1509879105 source:/home/pavel/src/git/Zlogger/src/logger.c
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<stdarg.h>
+	<unistd.h>
+	<pthread.h>
+	<string.h>
+	"macros.h"
+	"logger.h"
+	"config.h"
+

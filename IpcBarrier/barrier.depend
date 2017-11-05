@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1494219066 source:/home/pavel/src/ipc/barrier/src/barrier-test.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<pthread.h>
+	"macros.h"
+	"barrier.h"
+
+1491425597 /home/pavel/src/advc/inc/macros.h
+
+1493912242 /home/pavel/src/ipc/barrier/inc/barrier.h
+
+1494163671 source:/home/pavel/src/ipc/barrier/src/barrier.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"macros.h"
+	"barrier.h"
+
+1494015534 source:/home/pavel/src/ipc/barrier/src/herros.c
+

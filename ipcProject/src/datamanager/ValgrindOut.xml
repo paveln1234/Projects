@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<valgrindoutput>
+
+<protocolversion>4</protocolversion>
+<protocoltool>memcheck</protocoltool>
+
+<preamble>
+  <line>Memcheck, a memory error detector</line>
+  <line>Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.</line>
+  <line>Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info</line>
+  <line>Command: /home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager </line>
+</preamble>
+
+<pid>6007</pid>
+<ppid>2157</ppid>
+<tool>memcheck</tool>
+
+<args>
+  <vargv>
+    <exe>/usr/bin/valgrind.bin</exe>
+    <arg>--leak-check=full</arg>
+    <arg>--track-origins=yes</arg>
+    <arg>--xml=yes</arg>
+    <arg>--xml-file=/home/pavel/src/ipc/ipcProject/src/datamanager/ValgrindOut.xml</arg>
+  </vargv>
+  <argv>
+    <exe>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</exe>
+    <arg></arg>
+  </argv>
+</args>
+
+<status>
+  <state>RUNNING</state>
+  <time>00:00:00:00.706 </time>
+</status>
+
+<error>
+  <unique>0x0</unique>
+  <tid>1</tid>
+  <kind>InvalidRead</kind>
+  <what>Invalid read of size 4</what>
+  <stack>
+    <frame>
+      <ip>0x401978</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>InternalSubUpdate</fn>
+      <dir>/home/pavel/src/ipc/ipcProject/src/datamanager</dir>
+      <file>subscribeDs.c</file>
+      <line>179</line>
+    </frame>
+    <frame>
+      <ip>0x401958</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>SubUpdateFunction</fn>
+      <dir>/home/pavel/src/ipc/ipcProject/src/datamanager</dir>
+      <file>subscribeDs.c</file>
+      <line>172</line>
+    </frame>
+    <frame>
+      <ip>0x402A88</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>HashMap_Find</fn>
+      <dir>/home/pavel/src/advc/./hashmap</dir>
+      <file>safeThreadHashMap.c</file>
+      <line>271</line>
+    </frame>
+    <frame>
+      <ip>0x4016F1</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>subScribeDs_Set</fn>
+      <dir>/home/pavel/src/ipc/ipcProject/src/datamanager</dir>
+      <file>subscribeDs.c</file>
+      <line>107</line>
+    </frame>
+    <frame>
+      <ip>0x400F95</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>SubScribeDs_insertTest</fn>
+      <dir>/home/pavel/src/ipc/ipcProject/src/datamanager</dir>
+      <file>datamanger-test.c</file>
+      <line>119</line>
+    </frame>
+    <frame>
+      <ip>0x401075</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+  <auxwhat>Address 0x0 is not stack'd, malloc'd or (recently) free'd</auxwhat>
+</error>
+
+
+<status>
+  <state>FINISHED</state>
+  <time>00:00:00:01.508 </time>
+</status>
+
+<error>
+  <unique>0x3</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>32 bytes in 4 blocks are definitely lost in loss record 3 of 14</text>
+    <leakedbytes>32</leakedbytes>
+    <leakedblocks>4</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2FB55</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+    </frame>
+    <frame>
+      <ip>0x400F67</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>SubScribeDs_insertTest</fn>
+      <dir>/home/pavel/src/ipc/ipcProject/src/datamanager</dir>
+      <file>datamanger-test.c</file>
+      <line>117</line>
+    </frame>
+    <frame>
+      <ip>0x401075</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<error>
+  <unique>0xd</unique>
+  <tid>1</tid>
+  <kind>Leak_DefinitelyLost</kind>
+  <xwhat>
+    <text>2,504 (48 direct, 2,456 indirect) bytes in 1 blocks are definitely lost in loss record 13 of 14</text>
+    <leakedbytes>2504</leakedbytes>
+    <leakedblocks>1</leakedblocks>
+  </xwhat>
+  <stack>
+    <frame>
+      <ip>0x4C2FB55</ip>
+      <obj>/usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so</obj>
+      <fn>calloc</fn>
+    </frame>
+    <frame>
+      <ip>0x40443B</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>Vector_Create</fn>
+      <dir>/home/pavel/src/advc/./vector</dir>
+      <file>vector.c</file>
+      <line>30</line>
+    </frame>
+    <frame>
+      <ip>0x4024BB</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>HashMap_Create</fn>
+      <dir>/home/pavel/src/advc/./hashmap</dir>
+      <file>safeThreadHashMap.c</file>
+      <line>119</line>
+    </frame>
+    <frame>
+      <ip>0x40156C</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>subScribeDs_Creaty</fn>
+      <dir>/home/pavel/src/ipc/ipcProject/src/datamanager</dir>
+      <file>subscribeDs.c</file>
+      <line>55</line>
+    </frame>
+    <frame>
+      <ip>0x400E96</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>SubScribeDs_creatTest</fn>
+      <dir>/home/pavel/src/ipc/ipcProject/src/datamanager</dir>
+      <file>datamanger-test.c</file>
+      <line>98</line>
+    </frame>
+    <frame>
+      <ip>0x401075</ip>
+      <obj>/home/pavel/src/ipc/ipcProject/src/datamanager/bin/Debug/datamanager</obj>
+      <fn>main</fn>
+    </frame>
+  </stack>
+</error>
+
+<errorcounts>
+  <pair>
+    <count>1</count>
+    <unique>0x0</unique>
+  </pair>
+</errorcounts>
+
+<suppcounts>
+</suppcounts>
+
+</valgrindoutput>
+

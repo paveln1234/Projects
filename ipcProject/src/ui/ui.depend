@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1495466639 source:/home/pavel/src/ipc/ipcProject/src/ui/ui-test.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<pthread.h>
+	"mu_test.h"
+	"safeThreadQueue.h"
+	"ui.h"
+
+1495466546 source:/home/pavel/src/ipc/ipcProject/src/ui/uiserver.c
+	<stdio.h>
+	<stdlib.h>
+	<signal.h>
+	<fcntl.h>
+	<unistd.h>
+	<string.h>
+	<pthread.h>
+	<sys/stat.h>
+	"safeThreadQueue.h"
+	"ui.h"
+	"reporter.h"
+

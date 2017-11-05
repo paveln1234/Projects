@@ -1,0 +1,15 @@
+input folder = ../../input/
+inprogress folder = ../../inprogress/
+done folder = ../../done/
+report folder = ../../report/
+number of subsreibers = 1000000
+number of operators = 7
+opretor defult mmcmnc = 42422
+threads parser= 2
+thread datamanger = 2
+thread subs = 4
+thread op = 1
+Queue size cdr To Datamanager = 400
+Queue size ui To Reporter = 4
+Queue size ui To system manager = 4
+

@@ -1,0 +1,116 @@
+# depslib dependency file v1.0
+1494796393 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"mu_test.h"
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"safeThreadQueue.h"
+	"discoverer.h"
+
+1495018255 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/cdrMessager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cdrMessager.h"
+
+1494933091 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/cdrParser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"fileHandler.h"
+
+1494796085 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/cdrParserManager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"safeThreadQueue.h"
+	"discoverer.h"
+
+1494792447 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/discoverer.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	<pthread.h>
+	<unistd.h>
+	"cdrParserManager.h"
+	"discoverer.h"
+	"fileHandler.h"
+
+1494786382 source:/home/pavel/src/ipc/ipcProject/src/safeThreadQueue.c
+	<stdio.h>
+	<stdlib.h>
+	<pthread.h>
+	"safeThreadQueue.h"
+	"queue.h"
+
+1494774147 source:/home/pavel/src/ipc/ipcProject/src/fileHandler.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fileHandler.h"
+
+1495018255 source:/home/pavel/src/git/ipcProject/src/cdrmanager/cdrMessager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cdrMessager.h"
+
+1495717209 source:/home/pavel/src/git/ipcProject/src/cdrmanager/cdrParser.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<unistd.h>
+	<sys/syscall.h>
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"fileHandler.h"
+
+1495092904 source:/home/pavel/src/git/ipcProject/src/cdrmanager/cdrParserManager-test.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"mu_test.h"
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"safeThreadQueue.h"
+	"discoverer.h"
+
+1495716577 source:/home/pavel/src/git/ipcProject/src/cdrmanager/cdrParserManager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"cdrMessager.h"
+	"cdrParser.h"
+	"cdrParserManager.h"
+	"safeThreadQueue.h"
+	"discoverer.h"
+
+1495053631 source:/home/pavel/src/git/ipcProject/src/cdrmanager/discoverer.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<dirent.h>
+	<pthread.h>
+	<unistd.h>
+	"cdrParserManager.h"
+	"discoverer.h"
+	"fileHandler.h"
+

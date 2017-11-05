@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1498399658 source:c:\c++\el-al\elal\passenger\customer_t.cpp
+	"Customer_t.h"
+
+1498401252 c:\c++\el-al\elal\passenger\customer_t.h
+	<string>
+	"UserCostumerInt.h"
+
+1498426442 source:c:\c++\el-al\elal\passenger\main.cpp
+	<iostream>
+	<string>
+	"Customer_t.h"
+	"Passenger_t.h"
+	"UserCostumerInt.h"
+	"PassengerManager_t.h"
+
+1498401241 c:\c++\el-al\elal\passenger\usercostumerint.h
+	<string>
+
+1498399892 source:c:\c++\el-al\elal\passenger\passenger.cpp
+	"Passenger.h"
+
+1498399917 c:\c++\el-al\elal\passenger\passenger.h
+
+1498426409 source:c:\c++\el-al\elal\passenger\passenger_t.cpp
+	<sstream>
+	"Passenger_t.h"
+	"Customer_t.h"
+
+1498426004 c:\c++\el-al\elal\passenger\passenger_t.h
+	<string>
+	<vector>
+
+1498426768 source:c:\c++\el-al\elal\passenger\passengermanager_t.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<algorithm>
+	<sstream>
+	<cerrno>
+	<cstring>
+	"PassengerManager_t.h"
+	"Customer_t.h"
+
+1498426714 c:\c++\el-al\elal\passenger\passengermanager_t.h
+	<map>
+	<string>
+	<vector>
+	"Passenger_t.h"
+

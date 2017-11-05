@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="datamanager" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/datamanager" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/datamanager" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../../inc/cdrMessager.h" />
+		<Unit filename="../../inc/datamanager.h" />
+		<Unit filename="../../inc/oparetorDs.h" />
+		<Unit filename="../../inc/operator.h" />
+		<Unit filename="../../inc/subscribeDs.h" />
+		<Unit filename="../../inc/subscriber.h" />
+		<Unit filename="../cdrmanager/cdrMessager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="datamanager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="datamanger-test.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="oparetorDs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="operator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subscribeDs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="subsriber.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

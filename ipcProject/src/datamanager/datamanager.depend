@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1494829603 source:/home/pavel/src/advc/hashmap/safeThreadHashMap.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<pthread.h>
+	"vector.h"
+	"safeThreadHashMap.h"
+	"macros.h"
+	"list_functions.h"
+	"list_itr.h"
+	"list.h"
+
+1494828695 source:/home/pavel/src/ipc/ipcProject/src/datamanager/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	<unistd.h>
+	"mu_test.h"
+	"safeThreadHashMap.h"
+
+1495005420 source:/home/pavel/src/ipc/ipcProject/src/datamanager/datamanger-test.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"mu_test.h"
+	"subscribeDs.h"
+	"subscriber.h"
+	"operator.h"
+	"oparetorDs.h"
+	"datamanager.h"
+
+1495013470 source:/home/pavel/src/ipc/ipcProject/src/datamanager/subscribeDs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"safeThreadHashMap.h"
+	"subscribeDs.h"
+	"subscriber.h"
+
+1494916277 source:/home/pavel/src/ipc/ipcProject/src/datamanager/subsriber.c
+	<stdio.h>
+	<stdlib.h>
+	"subscriber.h"
+
+1495020190 source:/home/pavel/src/ipc/ipcProject/src/datamanager/datamanager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"cdrMessager.h"
+	"subscribeDs.h"
+	"oparetorDs.h"
+	"safeThreadQueue.h"
+	"datamanager.h"
+
+1494915788 source:/home/pavel/src/ipc/ipcProject/src/datamanager/operator.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"operator.h"
+
+1494999973 source:/home/pavel/src/ipc/ipcProject/src/datamanager/oparetorDs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<pthread.h>
+	"safeThreadHashMap.h"
+	"oparetorDs.h"
+	"operator.h"
+
+1495018255 source:/home/pavel/src/ipc/ipcProject/src/cdrmanager/cdrMessager.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"cdrMessager.h"
+

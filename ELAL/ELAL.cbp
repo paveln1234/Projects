@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ELAL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ELAL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ELAL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/AirPort.h" />
+		<Unit filename="include/AirPortManager.h" />
+		<Unit filename="include/BookingManager.h" />
+		<Unit filename="include/CeaserManager.h" />
+		<Unit filename="include/Comunicator.h" />
+		<Unit filename="include/Customer_t.h" />
+		<Unit filename="include/Flight.h" />
+		<Unit filename="include/FlightDataManager.h" />
+		<Unit filename="include/FlightData_t.h" />
+		<Unit filename="include/FlightFactory.h" />
+		<Unit filename="include/FlightManager.h" />
+		<Unit filename="include/FullFlightInterface.h" />
+		<Unit filename="include/Iflight.h" />
+		<Unit filename="include/Iplane.h" />
+		<Unit filename="include/Message_t.h" />
+		<Unit filename="include/PassengerManager_t.h" />
+		<Unit filename="include/Passenger_t.h" />
+		<Unit filename="include/PlaneFactory.h" />
+		<Unit filename="include/PlaneManager.h" />
+		<Unit filename="include/Plane_t.h" />
+		<Unit filename="include/RequstHandler.h" />
+		<Unit filename="include/ResrveationSystem.h" />
+		<Unit filename="include/SeatManager.h" />
+		<Unit filename="include/Seat_t.h" />
+		<Unit filename="include/Ticket_t.h" />
+		<Unit filename="include/Tier_t.h" />
+		<Unit filename="include/UserCostumerInt.h" />
+		<Unit filename="include/UserFlightInterface.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/AirPort.cpp" />
+		<Unit filename="src/AirPortManager.cpp" />
+		<Unit filename="src/BookingManager.cpp" />
+		<Unit filename="src/CeaserManager.cpp" />
+		<Unit filename="src/Comunicator.cpp" />
+		<Unit filename="src/Customer_t.cpp" />
+		<Unit filename="src/Flight.cpp" />
+		<Unit filename="src/FlightDataManager.cpp" />
+		<Unit filename="src/FlightData_t.cpp" />
+		<Unit filename="src/FlightFactory.cpp" />
+		<Unit filename="src/FlightManager.cpp" />
+		<Unit filename="src/Message_t.cpp" />
+		<Unit filename="src/PassengerManager_t.cpp" />
+		<Unit filename="src/Passenger_t.cpp" />
+		<Unit filename="src/PlaneFactory.cpp" />
+		<Unit filename="src/PlaneManager.cpp" />
+		<Unit filename="src/Plane_t.cpp" />
+		<Unit filename="src/RequstHandler.cpp" />
+		<Unit filename="src/ResrveationSystem.cpp" />
+		<Unit filename="src/SeatManager.cpp" />
+		<Unit filename="src/Seat_t.cpp" />
+		<Unit filename="src/Ticket_t.cpp" />
+		<Unit filename="src/Tier_t.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

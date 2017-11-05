@@ -1,0 +1,12 @@
+[#]
+Level = LOG_ERROR
+Path = /home/pavel/src/utilis/logerV3/logs/
+File = test.log
+
+[net]
+Level = LOG_WARNING
+File = network.log
+
+[query]
+Level = LOG_DEBUG
+File = querry_processor.log 

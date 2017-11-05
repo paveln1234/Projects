@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1446671344 source:c:\c++\el-al\elal\ui\main.cpp
+	<iostream>
+
+1498508992 source:c:\c++\el-al\elal\ui\ui_t.cpp
+	"Ui_t.h"
+
+1498509141 c:\c++\el-al\elal\ui\ui_t.h
+

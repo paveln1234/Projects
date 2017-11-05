@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1509604144 source:/home/pavel/src/producerConsumer_c/main.c
+	<pthread.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<sys/ipc.h>
+	<sys/sem.h>
+	<semaphore.h>
+	<unistd.h>
+

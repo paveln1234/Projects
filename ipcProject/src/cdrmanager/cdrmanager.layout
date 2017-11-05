@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="../fileHandler.c" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="571" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../inc/cdrParserManager.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="109" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="../../inc/cdrParser.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1637" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="cdrParserManager.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1320" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="../../inc/fileHandler.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1971" topLine="9" />
+		</Cursor>
+	</File>
+	<File name="cdrParserManager-test.c" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1364" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cdrMessager.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11085" topLine="111" />
+		</Cursor>
+		<Folding>
+			<Collapse line="28" />
+			<Collapse line="75" />
+			<Collapse line="92" />
+		</Folding>
+	</File>
+	<File name="cdrParser.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5509" topLine="171" />
+		</Cursor>
+	</File>
+	<File name="discoverer.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1271" topLine="34" />
+		</Cursor>
+	</File>
+	<File name="../../inc/cdrMessager.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="197" />
+		</Cursor>
+	</File>
+	<File name="../../inc/discoverer.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="600" topLine="18" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

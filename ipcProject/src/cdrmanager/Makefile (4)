@@ -1,0 +1,99 @@
+# Yuval Hamberg
+# yuval.hamberg@gmail.com
+# 17/5/2017
+# CDR_system
+
+# File names
+EXE_NAME = RUN_CDR
+#SOURCES_FILES = $(wildcard $(SOURCE_PATH)/*.c)
+SOURCES_FILES = $(shell find . -type f -name '*.c')
+#OBJECTS_FILES = $(patsubst $(SOURCE_PATH)/%.c,$(OBJECT_PATH)/%.o,$(SOURCES_FILES))
+OBJECTS_FILES := $(wildcard $(OBJECT_PATH)/*.o)
+HFILE = $(wildcard $(H_LOCAL_PATH)/*.h) 
+
+LIB_NEEDED_PATH1 = ../threadSafeMsgQueue/lib
+LIB_NEEDED1 = MSG_QUE.a
+
+LIB_NEEDED_PATH2 = ../../util/lib
+LIB_NEEDED2 = lib_DB.so
+
+#LIBSCREATE = $(EXE_NAME).a
+#LIB_CREATED_PATH = .
+
+HPATH = ../../util/header
+H_LOCAL_PATH = headers
+
+SOURCE_PATH = .
+
+OBJECT_PATH = objects
+CFLAGS = $(bits) -g -ansi -pedantic -Wall -I $(HPATH) -I $(H_LOCAL_PATH) -I $(LIB_NEEDED_PATH1)/../inc/
+CC = gcc
+
+DYN_LIB_PATH = LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$(LIB_NEEDED_PATH2)" 
+
+.Phony : clean rebuild run
+
+# find out if its a 64bit machine
+LBITS := $(shell getconf LONG_BIT)
+ifeq ($(LBITS),64)
+	# do 64 bit stuff here, like set some CFLAGS
+	bits = -m32
+else
+	# do 32 bit stuff here
+	bits = 
+endif
+
+# Main target
+$(EXE_NAME): $(SOURCES_FILES) $(OBJECTS_FILES) $(OBJECT_PATH)/system_test.o # $(LIB_CREATED_PATH)/$(LIBSCREATE)
+	$(MAKE) -C dataModuls
+	$(MAKE) -C inputsModuls
+	$(MAKE) -C managerialModuls
+	#$(MAKE) -C outputsModuls
+	
+	$(CC) $(CFLAGS) $(shell find objects/ -type f -name '*.o' -name !'*_moduletest.o') -o $(EXE_NAME) $(LIB_NEEDED_PATH1)/$(LIB_NEEDED1) $(LIB_NEEDED_PATH2)/$(LIB_NEEDED2) -lm -lpthread
+ 
+# To obtain object files
+$(OBJECT_PATH)/%.o: %.c $(HFILE)
+	$(CC) -c $(CFLAGS) $< -o $@
+
+#$(LIB_CREATED_PATH)/$(LIBSCREATE) : $(OBJECTS_FILES)
+#	ar -cvrs $(LIB_CREATED_PATH)/$(LIBSCREATE) $(OBJECTS_FILES)
+
+$(LIB_NEEDED_PATH1)/$(LIB_NEEDED1) : 
+	$(MAKE) $(LIB_NEEDED1) -C $(LIB_NEEDED_PATH1)/../
+	
+$(LIB_NEEDED1) : $(LIB_NEEDED_PATH1)/$(LIB_NEEDED1)
+
+$(LIB_NEEDED_PATH2)/$(LIB_NEEDED2) : 
+	$(MAKE) $(LIB_NEEDED2) -C $(LIB_NEEDED_PATH2)/../source
+	
+$(LIB_NEEDED2) : $(LIB_NEEDED_PATH2)/$(LIB_NEEDED2)
+
+run: ${EXE_NAME} 
+#	$(MAKE) run -C CDR_files
+	$(MAKE) run -C dataModuls
+	$(MAKE) run -C inputsModuls
+#	$(MAKE) run -C managerialModuls
+#	$(MAKE) run -C outputsModuls
+	find CDR_files/CDR_done/ -name "*.cdr" -type f -exec /bin/mv {} CDR_files/CDR_raw/ \;
+	$(DYN_LIB_PATH) ./${EXE_NAME} 
+
+clean:
+	rm -f *.o
+#	rm -f object/*.o
+	rm -f $(OBJECTS_FILES)
+	rm -f *~
+	rm -f $(EXE_NAME)
+	rm -f a.out
+	rm -f errLog.txt
+#	rm -f $(LIB_CREATED_PATH)/$(LIBSCREATE)
+#	rm -f $(LIB_NEEDED_PATH1)/$(LIB_NEEDED1)
+	$(MAKE) clean -C $(LIB_NEEDED_PATH1)/../
+	$(MAKE) clean -C dataModuls
+	$(MAKE) clean -C inputsModuls
+	$(MAKE) clean -C managerialModuls
+#	$(MAKE) clean -C outputsModuls
+
+rebuild : clean $(EXE_NAME)
+
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1494693777 source:/home/pavel/src/ipc/ipcProject/src/cdtCreator/cdrMaker.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+
