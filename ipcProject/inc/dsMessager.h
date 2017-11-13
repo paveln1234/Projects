@@ -22,12 +22,14 @@ typedef enum MesageType
     subSriber
 }MesageType;
 
+
+/*define uniun for data or time use */
 typedef union
 {
     size_t sec;
     float data;
 }DataType_u;
-
+/*define structer of DS Mesaage type*/
 typedef struct DSMessage_t
 {
     MesageType m_dsType;
@@ -45,13 +47,30 @@ typedef enum DSMessage_Result
 }DSMessage_Result;
 
 
-
+/**
+Create an emptey message
+return pointer to new message
+*/
 DSMessage_t* DSMessage_Creaty();
-
+/**
+Destroy message
+param [in] DsMessage_t* - msg as define in this moudule
+return - DSMessage_Result
+*/
 DSMessage_Result DSMessage_Desroy(DSMessage_t* _msg);
 
+/*
+the function set (desript) message to send 
+param [out] DsMessage_t* -message that will set msg as define in this moudule
+return - DSMessage_Result
+*/
 DSMessage_Result DSMessage_Set(DSMessage_t* _msg);
 
+/*
+the function get message (encript)
+param [out] DsMessage_t* -message that will set msg as define in this moudule
+return - DSMessage_Result
+*/
 DSMessage_Result DSMessage_Get(DSMessage_t* _msg);
 
 #endif /* _DSMASSEGER_H_*/
